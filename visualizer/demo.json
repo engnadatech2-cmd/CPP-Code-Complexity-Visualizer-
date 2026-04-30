@@ -1,0 +1,169 @@
+{
+  "project": "Sample Files",
+  "analyzed_at": "2026-04-29T17:44:09",
+  "analyzer_version": "1.0.0",
+  "summary": {
+    "total_files": 3,
+    "total_functions": 9,
+    "total_lines": 145,
+    "avg_complexity": 3.8,
+    "max_complexity": 14,
+    "riskiest_file": "complex.cpp",
+    "riskiest_function": "processData",
+    "high_risk_count": 1,
+    "medium_risk_count": 1,
+    "low_risk_count": 7
+  },
+  "files": [
+    {
+      "name": "complex.cpp",
+      "path": "tests/sample_files/complex.cpp",
+      "total_lines": 70,
+      "code_lines": 54,
+      "comment_lines": 8,
+      "blank_lines": 8,
+      "function_count": 3,
+      "complexity_score": 25,
+      "risk": "high",
+      "dependencies": [],
+      "has_circular_dep": false,
+      "functions": [
+        {
+          "name": "processData",
+          "line_start": 12,
+          "line_end": 49,
+          "lines": 38,
+          "complexity": 14,
+          "nesting_depth": 5,
+          "parameter_count": 3,
+          "risk": "high",
+          "risk_reasons": ["high_complexity", "deep_nesting"]
+        },
+        {
+          "name": "validate",
+          "line_start": 52,
+          "line_end": 63,
+          "lines": 12,
+          "complexity": 8,
+          "nesting_depth": 2,
+          "parameter_count": 3,
+          "risk": "medium",
+          "risk_reasons": ["medium_complexity"]
+        },
+        {
+          "name": "clamp",
+          "line_start": 66,
+          "line_end": 70,
+          "lines": 5,
+          "complexity": 3,
+          "nesting_depth": 0,
+          "parameter_count": 3,
+          "risk": "low",
+          "risk_reasons": []
+        }
+      ]
+    },
+    {
+      "name": "simple.cpp",
+      "path": "tests/sample_files/simple.cpp",
+      "total_lines": 25,
+      "code_lines": 13,
+      "comment_lines": 8,
+      "blank_lines": 4,
+      "function_count": 3,
+      "complexity_score": 3,
+      "risk": "low",
+      "dependencies": [],
+      "has_circular_dep": false,
+      "functions": [
+        {
+          "name": "add",
+          "line_start": 10,
+          "line_end": 12,
+          "lines": 3,
+          "complexity": 1,
+          "nesting_depth": 0,
+          "parameter_count": 2,
+          "risk": "low",
+          "risk_reasons": []
+        },
+        {
+          "name": "greet",
+          "line_start": 17,
+          "line_end": 19,
+          "lines": 3,
+          "complexity": 1,
+          "nesting_depth": 0,
+          "parameter_count": 1,
+          "risk": "low",
+          "risk_reasons": []
+        },
+        {
+          "name": "main",
+          "line_start": 21,
+          "line_end": 25,
+          "lines": 5,
+          "complexity": 1,
+          "nesting_depth": 0,
+          "parameter_count": 0,
+          "risk": "low",
+          "risk_reasons": []
+        }
+      ]
+    },
+    {
+      "name": "with_comments.cpp",
+      "path": "tests/sample_files/with_comments.cpp",
+      "total_lines": 50,
+      "code_lines": 25,
+      "comment_lines": 19,
+      "blank_lines": 6,
+      "function_count": 3,
+      "complexity_score": 6,
+      "risk": "low",
+      "dependencies": [],
+      "has_circular_dep": false,
+      "functions": [
+        {
+          "name": "isPositive",
+          "line_start": 18,
+          "line_end": 21,
+          "lines": 4,
+          "complexity": 1,
+          "nesting_depth": 0,
+          "parameter_count": 1,
+          "risk": "low",
+          "risk_reasons": []
+        },
+        {
+          "name": "trickyCases",
+          "line_start": 24,
+          "line_end": 31,
+          "lines": 8,
+          "complexity": 1,
+          "nesting_depth": 0,
+          "parameter_count": 0,
+          "risk": "low",
+          "risk_reasons": []
+        },
+        {
+          "name": "binarySearch",
+          "line_start": 36,
+          "line_end": 50,
+          "lines": 15,
+          "complexity": 4,
+          "nesting_depth": 2,
+          "parameter_count": 2,
+          "risk": "low",
+          "risk_reasons": []
+        }
+      ]
+    }
+  ],
+  "dependency_graph": {
+    "nodes": ["complex.cpp", "simple.cpp", "with_comments.cpp"],
+    "edges": [
+    ],
+    "circular_dependencies": []
+  }
+}
